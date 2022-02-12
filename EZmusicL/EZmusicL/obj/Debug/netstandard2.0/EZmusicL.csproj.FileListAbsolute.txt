@@ -1,0 +1,15 @@
+F:\Wang's\Projects\EZmusicL\EZmusicL\EZmusicL\EZmusicL\bin\Debug\netstandard2.0\EZmusicL.deps.json
+F:\Wang's\Projects\EZmusicL\EZmusicL\EZmusicL\EZmusicL\bin\Debug\netstandard2.0\EZmusicL.dll
+F:\Wang's\Projects\EZmusicL\EZmusicL\EZmusicL\EZmusicL\bin\Debug\netstandard2.0\ref\EZmusicL.dll
+F:\Wang's\Projects\EZmusicL\EZmusicL\EZmusicL\EZmusicL\bin\Debug\netstandard2.0\EZmusicL.pdb
+F:\Wang's\Projects\EZmusicL\EZmusicL\EZmusicL\EZmusicL\obj\Debug\netstandard2.0\EZmusicL.GeneratedMSBuildEditorConfig.editorconfig
+F:\Wang's\Projects\EZmusicL\EZmusicL\EZmusicL\EZmusicL\obj\Debug\netstandard2.0\App.xaml.g.cs
+F:\Wang's\Projects\EZmusicL\EZmusicL\EZmusicL\EZmusicL\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+F:\Wang's\Projects\EZmusicL\EZmusicL\EZmusicL\EZmusicL\obj\Debug\netstandard2.0\EZmusicL.AssemblyInfoInputs.cache
+F:\Wang's\Projects\EZmusicL\EZmusicL\EZmusicL\EZmusicL\obj\Debug\netstandard2.0\EZmusicL.AssemblyInfo.cs
+F:\Wang's\Projects\EZmusicL\EZmusicL\EZmusicL\EZmusicL\obj\Debug\netstandard2.0\EZmusicL.csproj.CoreCompileInputs.cache
+F:\Wang's\Projects\EZmusicL\EZmusicL\EZmusicL\EZmusicL\obj\Debug\netstandard2.0\XamlC.stamp
+F:\Wang's\Projects\EZmusicL\EZmusicL\EZmusicL\EZmusicL\obj\Debug\netstandard2.0\EZmusicL.dll
+F:\Wang's\Projects\EZmusicL\EZmusicL\EZmusicL\EZmusicL\obj\Debug\netstandard2.0\ref\EZmusicL.dll
+F:\Wang's\Projects\EZmusicL\EZmusicL\EZmusicL\EZmusicL\obj\Debug\netstandard2.0\EZmusicL.pdb
+F:\Wang's\Projects\EZmusicL\EZmusicL\EZmusicL\EZmusicL\obj\Debug\netstandard2.0\EZmusicL.csproj.AssemblyReference.cache

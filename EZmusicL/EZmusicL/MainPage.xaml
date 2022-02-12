@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EZmusicL.MainPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+                <Label Text="EZMusicL" HorizontalTextAlignment="Start" TextColor="White" FontSize="Large"/>
+            </Frame>
+
+            <ScrollView>
+                <StackLayout>
+                    <StackLayout Padding="5">
+                        <Frame CornerRadius="10">
+                            <StackLayout>
+                                <Label Text="官网" FontSize="Subtitle"/>
+                                <Grid Padding="5">
+                                    <Button x:Name="btn_opennt" Text="网易云音乐" BackgroundColor="#2196F3" CornerRadius="5" Clicked="btn_opennt_Clicked"/>
+                                </Grid>
+                            </StackLayout>
+                        </Frame>
+                        <Frame CornerRadius="10">
+                            <StackLayout>
+                                <Label Text="获取歌单" FontSize="Subtitle"/>
+                                <Grid Padding="5">
+                                    <Label Grid.Row="0" Text="结果默认选中" VerticalOptions="Center" FontSize="Body"/>
+                                    <Switch x:Name="sw_ison" Grid.Row="0" Grid.Column="1" HorizontalOptions="End" IsToggled="false"/>
+                                    <Entry Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" x:Name="in_id" Keyboard="Numeric" Placeholder="请输入歌单ID" />
+                                    <Button Grid.Row="2" Grid.Column="0" x:Name="btn_search" Text="搜索" BackgroundColor="#2196F3" HorizontalOptions="Fill" CornerRadius="5" Clicked="btn_search_Clicked"/>
+                                    <Button Grid.Row="2" Grid.Column="1" x:Name="btn_random" Text="随机(不一定存在)" BackgroundColor="#2196F3" HorizontalOptions="Fill" CornerRadius="5" Clicked="btn_random_Clicked"/>
+                                </Grid>
+                            </StackLayout>
+                        </Frame>
+
+                        <Frame CornerRadius="10">
+                            <StackLayout>
+                                <Label Text="结果列表" FontSize="Subtitle"/>
+                                <ScrollView Padding="5">
+                                    <StackLayout HeightRequest="150">
+                                        <TableView>
+                                            <TableRoot>
+                                                <TableSection Title="歌曲" x:Name="ts">
+                                                </TableSection>
+                                            </TableRoot>
+                                        </TableView>
+                                    </StackLayout>
+                                </ScrollView>
+                                <Button Grid.Row="1" Grid.Column="1" x:Name="btn_download" Text="下载" BackgroundColor="#2196F3" HorizontalOptions="Fill" CornerRadius="5" Clicked="btn_download_Clicked"/>
+
+                            </StackLayout>
+
+                        </Frame>
+                        <Frame CornerRadius="10">
+                            <StackLayout>
+                                <Label Text="保存位置" FontSize="Subtitle"/>
+                                <Grid Padding="5">
+                                    <Entry Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" x:Name="folderpath" Text="/storage/emulated/0/Download"/>
+                                    <Button Grid.Row="1" Grid.Column="0" x:Name="btn_confirm" Text="确定" BackgroundColor="#2196F3" HorizontalOptions="Fill" CornerRadius="5" Clicked="btn_confirm_Clicked"/>
+                                    <Button Grid.Row="1" Grid.Column="1" x:Name="btn_reset" Text="重置" BackgroundColor="#2196F3" HorizontalOptions="Fill" CornerRadius="5" Clicked="btn_reset_Clicked"/>
+                                </Grid>
+
+                            </StackLayout>
+                        </Frame>
+                        <Frame CornerRadius="10">
+                            <StackLayout>
+                                <Label Text="一言" FontSize="Subtitle"/>
+                                <Label x:Name="aline" Text="" FontSize="Body"/>
+                                <Button x:Name="btn_getaline" Text="换一个" BackgroundColor="#2196F3" HorizontalOptions="Fill" CornerRadius="5" Clicked="btn_getaline_Clicked"/>
+                            </StackLayout>
+                        </Frame>
+                        <Frame CornerRadius="10">
+                            <StackLayout>
+                                <Label Text="info" FontSize="Subtitle"/>
+                                <StackLayout Padding="5">
+                                    <Label Text="App能下载所有版权限制外的歌曲"/>
+                                    <Label>
+                                        <Label.FormattedText>
+                                            <FormattedString>
+                                                <Span Text="Made by "/>
+                                                <Span Text="POPCORNBOOM." FontAttributes="Bold" FontSize="15"/>
+                                            </FormattedString>
+                                        </Label.FormattedText>
+                                    </Label>
+                                    <Label>
+                                        <Label.FormattedText>
+                                            <FormattedString>
+                                                <Span Text="My github page: "/>
+                                                <Span Text="https://github.com/POPCORNBOOM" FontAttributes="Bold" FontSize="15"/>
+                                            </FormattedString>
+                                        </Label.FormattedText>
+                                    </Label>
+                                    <Label>
+                                        <Label.FormattedText>
+                                            <FormattedString>
+                                                <Span Text="My bilibili page: "/>
+                                                <Span Text="https://space.bilibili.com/271218438" FontAttributes="Bold" FontSize="15"/>
+                                            </FormattedString>
+                                        </Label.FormattedText>
+                                    </Label>
+                                    <Label>
+                                        <Label.FormattedText>
+                                            <FormattedString>
+                                                <Span Text="Using API: "/>
+                                                <Span Text="https://api.injahow.cn/meting/ " FontAttributes="Bold" FontSize="15"/>
+                                                <Span Text=" Thanks "/>
+                                                <Span Text="INJAHOW : https://injahow.com/" FontAttributes="Bold" FontSize="15"/>
+
+                                            </FormattedString>
+                                        </Label.FormattedText>
+                                    </Label>
+
+                                </StackLayout>
+                            </StackLayout>
+                        </Frame>
+                        <Frame CornerRadius="10" Background="EZmusic.png">
+                            <StackLayout>
+                                <Label Text="提示" FontSize="Subtitle"/>
+                                <StackLayout Padding="5">
+                                    <Label>
+                                        <Label.FormattedText>
+                                            <FormattedString>
+                                                <Span Text="开发者仅对APP提供快捷访问API和批量下载API链接中的内容的功能，App本身及API链接中的内容" FontSize="14"/>
+                                                <Span Text="仅供学习与交流使用，严禁用于商业用途！！！" FontAttributes="Bold" FontSize="14" TextColor="Red" />
+                                            </FormattedString>
+                                        </Label.FormattedText>
+                                    </Label>
+                                    <Label Text="其他"/>
+                                    <Label>
+                                        <Label.FormattedText>
+                                            <FormattedString>
+                                                <Span Text="API链接中下载的内容，请在" FontSize="14"/>
+                                                <Span Text="试听24小时内删除！" FontAttributes="Bold" FontSize="14" TextColor="Red" />
+                                            </FormattedString>
+                                        </Label.FormattedText>
+                                    </Label>
+                                    <Button x:Name="btn_openws" Text="访问项目" BackgroundColor="#2196F3" CornerRadius="5" Clicked="btn_openws_Clicked"/>
+                                </StackLayout>
+                            </StackLayout>
+                        </Frame>
+                        <Frame CornerRadius="10" Padding="5,0,5,5" Background="EZmusic.png">
+                            <StackLayout>
+                                <Image Source="EZmusic.png" HorizontalOptions="Center"/>
+                                <Label Text="EZMusicL" HorizontalOptions="Center" FontSize="50"/>
+
+                            </StackLayout>
+                        </Frame>
+
+                    </StackLayout>
+
+                </StackLayout>
+            </ScrollView>
+        </StackLayout>
+
+    </ContentPage.Content>
+
+</ContentPage>
